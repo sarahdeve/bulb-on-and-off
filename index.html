@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+
+	
+
+</head>
+
+<body>
+
+ <img id="image" src="bulboff.png"><br>
+ <input type="button" onclick="bulb()" value="On" id="shutup">
+
+ <style type="text/css">
+	
+	#image
+	{
+		width: 150px;
+		height: 200px;
+	}
+</style>
+
+<script type="text/javascript">
+			
+			var y = document.getElementById('image');
+			var z = document.getElementById('shutup') ;
+			var ol = true;
+
+
+		// z.addEventListener("click", 
+			function bulb(){
+		
+			if (ol) 
+			{
+				y.src='bulbon.png';				
+				z.value="Off";
+			}
+			else
+			{
+				y.src='bulboff.png';				
+				z.value="On";
+			}
+				ol = !ol;
+		}
+
+		
+	</script>
+</body>
+</html>
